@@ -75,7 +75,7 @@ router.get("/com.apple.remotemanagement", (req, res) => {
   const inputStream = Buffer.from(responseText);
 
   const responseHeaders = {
-    "Location":"https://userenrollment-vercel.vercel.app/.well-known/com.apple.remotemanagement/ServiceDiscoveryData.json"
+    "Location":"https://www.userenrollment-vercel.vercel.app/.well-known/com.apple.remotemanagement/ServiceDiscoveryData.json"
   };
 
   console.log(inputStream.length);
