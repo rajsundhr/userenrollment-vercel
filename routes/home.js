@@ -51,7 +51,7 @@ const router = express.Router();
 router.get("/com.apple.remotemanagement/ServiceDiscoveryData.json", (req, res) => {
   // Simulating input stream data
   console.log("Sample")
-  const responseText = '{"Servers":[{"Version":"mdm-byod","BaseURL":"https://10.53.76.135:8443/mdm/client/v1/enroll?encapiKey=2f708eee&templateToken=a744b55d3bf6d28c9a3fb6e3510b9e81"}]}';
+  const responseText = '{"Servers":[{"Version":"mdm-byod","BaseURL":"https://muthuraj-14527.csez.zohocorpin.com:443/mdm/client/v1/enroll?encapiKey=1G8rvZw%2B5Mgaw1LdZdvv60ks1YBaby7MzdcXEm9801uKue%2FbjDBLUJRyNanN5FMXq3tirvrIuX%2FMZPC3P59Ov8hvXO99FxwGRFdCV48btXTsTKVbhvB6q4E%3D&templateToken=7beb3830f0cc541f25a237841e6a6ebc"}]}';
   const inputStream = Buffer.from(responseText);
 
   const responseHeaders = {
