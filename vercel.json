@@ -1,1 +1,15 @@
-{"Servers":[{"Version":"mdm-byod","BaseURL":"https://10.51.78.137:9383/mdm/client/v1/enroll?encapiKey=d56021ed&templateToken=6f72ab40e696f8a01187fd8b2844c62b"}]}
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
